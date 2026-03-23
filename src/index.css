@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-biem-primary: #532e8e;
+  --color-biem-secondary: #dfc3fa;
+  --color-biem-dark: #5b3483;
+  --color-biem-accent: #c46a2d;
+  --color-biem-accent-hover: #a55522;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
