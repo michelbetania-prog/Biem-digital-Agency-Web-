@@ -17,7 +17,9 @@ import {
   ChevronRight,
   ShieldCheck,
   Cpu,
-  BarChart3
+  BarChart3,
+  Mail,
+  MessageCircle
 } from 'lucide-react';
 
 export default function AboutPage() {
@@ -41,8 +43,8 @@ export default function AboutPage() {
           <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600 uppercase tracking-wider">
             <Link to="/" className="hover:text-biem-primary transition-colors">Inicio</Link>
             <Link to="/quienes-somos" className="text-biem-primary border-b-2 border-biem-accent">Conoce BIEM</Link>
-            <a href="/#form" className="px-6 py-2.5 bg-biem-accent text-white rounded-lg hover:bg-biem-accent-hover transition-all shadow-lg shadow-biem-accent/20">
-              Diagnóstico Estratégico
+            <a href="https://calendly.com/equipo-biemdigital/30min" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 bg-biem-accent text-white rounded-lg hover:bg-biem-accent-hover transition-all shadow-lg shadow-biem-accent/20">
+              Agendar Diagnóstico
             </a>
           </div>
         </div>
@@ -383,9 +385,17 @@ export default function AboutPage() {
               referrerPolicy="no-referrer"
             />
           </Link>
-          <div className="flex gap-12 text-xs font-black uppercase tracking-[0.2em] text-slate-400">
+          <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 text-xs font-black uppercase tracking-[0.2em] text-slate-400">
             <a href="https://www.linkedin.com/company/biem-digital-agency/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="hover:text-biem-primary transition-colors">LinkedIn</a>
             <a href="https://www.instagram.com/biemdigitalrd/?hl=es" target="_blank" rel="noopener noreferrer" className="hover:text-biem-primary transition-colors">Instagram</a>
+            <a href="mailto:equipo@biemdigital.com" className="hover:text-biem-primary transition-colors flex items-center gap-2">
+              <Mail size={14} />
+              equipo@biemdigital.com
+            </a>
+            <a href="https://wa.me/message/7U7KBWNX7E2CP1" target="_blank" rel="noopener noreferrer" className="hover:text-biem-primary transition-colors flex items-center gap-2">
+              <MessageCircle size={14} />
+              WhatsApp
+            </a>
             <a href="/privacidad" className="hover:text-biem-primary transition-colors">Privacidad</a>
           </div>
           <p className="text-slate-400 text-xs font-bold uppercase tracking-widest">
